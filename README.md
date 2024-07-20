@@ -2,4 +2,11 @@
 SoftUni React Cource Project
 
 ## 1. Inicialize project
-    #1. Inicialize Git Repo
+- [ ] Inicialize Git Repo
+- [ ] Add softuni practice server
+- [ ] Add base vite react project as client
+    * CleanUp client
+    * CleanUp client
+    * Add project resources
+    * Separate html in to components
+    
