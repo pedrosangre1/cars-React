@@ -11,8 +11,7 @@ export default function Header() {
             <div id="home-page">
                 <h1>Latest Games</h1>
 
-                <!-- Display div: with information about every game (if any) -->
-                <div className="game">
+                    <div className="game">
                     <div className="image-wrap">
                         <img src="./images/CoverFire.png"/>
                     </div>
