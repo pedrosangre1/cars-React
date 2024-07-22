@@ -10,7 +10,7 @@ import GameCreate from './componets/game-create/GameCreate';
 function App() {
    return (
   <div id="box">
-     <h1>Cars</h1>
+     <h1>Коли</h1>
       <Header/>
     <main id="main-content">
       <Routes>

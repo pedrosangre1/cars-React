@@ -4,20 +4,20 @@ export default function GameCreate() {
 <form id="create">
     <div className="container">
 
-        <h1>Create Game</h1>
-        <label htmlFor="leg-title">Legendary title:</label>
+        <h1>Нов автомобил</h1>
+        <label htmlFor="leg-title">Марка:</label>
         <input type="text" id="title" name="title" placeholder="Enter game title..."/>
 
-        <label htmlFor="category">Category:</label>
+        <label htmlFor="category">Модел</label>
         <input type="text" id="category" name="category" placeholder="Enter game category..."/>
 
-        <label htmlFor="levels">MaxLevel:</label>
+        <label htmlFor="levels">Регистрационен Номер:</label>
         <input type="number" id="maxLevel" name="maxLevel" min="1" placeholder="1"/>
 
-        <label htmlFor="game-img">Image:</label>
+        <label htmlFor="game-img">Картинка:</label>
         <input type="text" id="imageUrl" name="imageUrl" placeholder="Upload a photo..."/>
 
-        <label htmlFor="summary">Summary:</label>
+        <label htmlFor="summary">Описание:</label>
         <textarea name="summary" id="summary"></textarea>
         <input className="btn submit" type="submit" value="Create Game"/>
     </div>
