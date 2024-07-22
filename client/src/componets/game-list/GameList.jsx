@@ -10,7 +10,7 @@ gamesAPI.getAll()
     
     return (
 <section id="catalog-page">
-<h1>All Cars</h1>
+<h1>Всички коли </h1>
 {/* <!-- Display div: with information about every game (if any) --> */}
 <div className="allGames">
     <div className="allGames-info">
