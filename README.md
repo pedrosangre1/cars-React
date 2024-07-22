@@ -21,8 +21,8 @@ SoftUni React Cource Project
 ## 4. Page Implementations
 - [x] Car list
 - [ ] Details
-- [ ] Details link
-- [ ] Details route
+  - [x] Details link
+  - [ ] Details route
 - [ ] Api function - getOne
 - [ ] Home - Latest Games
 ## 5. Comments (Advanced)

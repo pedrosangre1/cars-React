@@ -9,3 +9,12 @@ export const getAll = async() => {
     
     return cars;
 };
+
+export const getOne = (carsId) => request.get(`${BASE_URL}/${carsId}`);
+
+const carsAPI ={
+    getAll,
+    getOne,
+};
+
+export default carsAPI;
