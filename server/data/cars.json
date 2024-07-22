@@ -1,0 +1,29 @@
+{
+    "c638199f-12ba-43bd-8d1e-d3e3bd118fd0": {
+        "marka": "BMW",
+        "model": "316",
+        "regno": "KH8888AA",
+        "photo": "./images/car_1.jpg",
+        "summary": "Nqkakvo opisanie",
+        "datetime": "2024-07-22",
+        "_id": "c638199f-12ba-43bd-8d1e-d3e3bd118fd0"
+    },
+    "a5497c4f-68b9-424c-bb21-bf6a0582b790": {
+        "marka": "BMW",
+        "model": "318",
+        "regno": "KH7777BG",
+        "photo": "./images/car_1.jpg",
+        "summary": "Nqkakvo opisanie",
+        "datetime": "2024-07-22",
+        "_id": "a5497c4f-68b9-424c-bb21-bf6a0582b790"
+    },
+    "3ff9ffcb-3eff-4112-8889-f42add9b562c": {
+        "marka": "BMW",
+        "model": "318i",
+        "regno": "KH9999AA",
+        "photo": "./images/car_1.jpg",
+        "summary": "Nqkakvo opisanie",
+        "datetime": "2024-07-22",
+        "_id": "3ff9ffcb-3eff-4112-8889-f42add9b562c"
+    }
+}

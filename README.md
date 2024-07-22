@@ -8,4 +8,26 @@ SoftUni React Cource Project
 - [x] CleanUp client
 - [x] Add project resources
 - [x] Separate html in to components
-    
+## 2. React Router
+- [x] Install react-router-dom
+- [x] Setup react-router-dom
+- [x] Add routes in App.jsx
+- [x] Add links in the navigation
+## 3. Create Service Layer
+- [x] Service layer architecture disccusion
+- [x] Abstract requester
+- [x] Add games api
+- [x] Preseed practice server
+## 4. Page Implementations
+- [ ] Game list
+- [ ] Details
+- [ ] Details link
+- [ ] Details route
+- [ ] Api function - getOne
+- [ ] Home - Latest Games
+## 5. Comments (Advanced)
+- [ ] Create service for nested resource `comments`
+- [ ] Post comment to server
+- [ ] Read comments from server
+- [ ] Add comments in the component
+- [ ] Clear form
