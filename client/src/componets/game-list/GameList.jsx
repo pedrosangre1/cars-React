@@ -13,9 +13,12 @@ carsAPI.getAll()
 <section id="catalog-page">
 <h1>Всички коли </h1>
 {/* <!-- Display div: with information about every game (if any) --> */}
-{cars.map(game => <CarListItem key= {game._id} {...game}/>)}
+{ cars.length > 0 
+? cars.map(game => <CarListItem key= {game._id} {...game}/>)
+:<h3 className="no-articles">Няма никакви коли</h3>
+}
 {/* <!-- Display paragraph: If there is no games  --> */}
-<h3 className="no-articles">No articles yet</h3>
+
 </section>
     );
 }

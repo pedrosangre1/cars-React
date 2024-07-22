@@ -16,10 +16,10 @@ SoftUni React Cource Project
 ## 3. Create Service Layer
 - [x] Service layer architecture disccusion
 - [x] Abstract requester
-- [x] Add games api
+- [x] Add cars api
 - [x] Preseed practice server
 ## 4. Page Implementations
-- [ ] Game list
+- [x] Car list
 - [ ] Details
 - [ ] Details link
 - [ ] Details route
