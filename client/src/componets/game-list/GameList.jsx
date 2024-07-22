@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import * as gamesAPI from '../../api/gamesapi';
+import * as carsAPI from '../../api/carsapi';
 
 export default function GameList() {
-    const [games, setGames] = useState([]);
+    const [cars, setCars] = useState([]);
     useEffect(()=>{
-gamesAPI.getAll()
-.then(result => setGames(result));
+carsAPI.getAll()
+.then(result => setCars(result));
     },[]);
     
     return (
