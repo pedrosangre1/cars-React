@@ -6,13 +6,11 @@ export default function GameDetails() {
     const[car, setCar] = useState({});
     const{carsId} = useParams();
     
-useEffect(()=> {
-    (async () =>{
-        const result = await carsAPI.getOne(carId);
-      //tTODO glich if set carsId
-        setCar(result);
-    })();
-});
+    useEffect( () => { const fetchCarDetails = async ( ) => {
+        try { const result = await carsAPI. getOne(carsId); setCar(result); } 
+        catch (error) { console. error( "Error fetching car details:", error); } }; 
+        fetchCarDetails(); }, [carsId]); 
+        if (!car) { return <p>Loading...</p>; } 
     return (
         <section id="game-details">
         <h1>Car Details</h1>
@@ -21,8 +19,8 @@ useEffect(()=> {
             <div className="game-header">
                 <img className="game-img" src={car.photo} />
                 <h1>{car.marka}  {car.model}</h1>
-                <span className="levels">MaxLevel: 4</span>
-                <p className="type">Action, Crime, Fantasy</p>
+                <span className="levels">Регистрационен номер:{car.regno}</span>
+                 <p className="type">Въведена на:{car.datetime}</p>
             </div>
 
             <p className="text"> {car.summary} </p>
