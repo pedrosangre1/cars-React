@@ -1,4 +1,18 @@
+import { useEffect,useState } from "react";
+import carsAPI from "../../api/carsapi";
+import LastedCars from "./lastedCar/LastedCars";
+
+
 export default function Home() {
+const [lastedCars, setLastedCars] = useState([]);
+    useEffect (() => {
+(async () =>{
+    const result = await carsAPI.getAll();
+//    console.log(result);
+    setLastedCars(result.reverse().slice(0, 3));
+})();
+    }, [])
+
     return (
             <section id="welcome-world">
 
@@ -9,47 +23,13 @@ export default function Home() {
             <img src="./images/four_slider_img01.png" alt="hero"/>
 
             <div id="home-page">
-                <h1>Latest Games</h1>
+                <h1>Latest Cars</h1>
 
-                    <div className="game">
-                    <div className="image-wrap">
-                        <img src="./images/CoverFire.png"/>
-                    </div>
-                    <h3>Cover Fire</h3>
-                    <div className="rating">
-                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div className="data-buttons">
-                        <a href="#" className="btn details-btn">Details</a>
-                    </div>
-                </div>
-                <div className="game">
-                    <div className="image-wrap">
-                        <img src="./images/ZombieLang.png"/>
-                    </div>
-                    <h3>Zombie Lang</h3>
-                    <div className="rating">
-                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div className="data-buttons">
-                        <a href="#" className="btn details-btn">Details</a>
-                    </div>
-                </div>
-                <div clasName="game">
-                    <div className="image-wrap">
-                        <img src="./images/MineCraft.png"/>
-                    </div>
-                    <h3>MineCraft</h3>
-                    <div className="rating">
-                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div className="data-buttons">
-                        <a href="#" className="btn details-btn">Details</a>
-                    </div>
-                </div>
-
-                <p className="no-articles">No games yet</p>
-            </div>
+{lastedCars.length > 0
+    ? lastedCars.map(cars => <LastedCars key ={cars._id} {...cars}/>)
+    : <p className="no-articles">No games yet</p>
+}
+              </div>
             </section>
 );
 }
