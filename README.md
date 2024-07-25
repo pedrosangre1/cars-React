@@ -31,3 +31,7 @@ SoftUni React Cource Project
 - [ ] Read comments from server
 - [ ] Add comments in the component
 - [ ] Clear form
+[text](https://docs.google.com/document/d/1SVO-6ejDyWqlK2Fxv0B-COFdKbTwVG6QsSlpXsH5Wks/edit)
+
+
+npm run build
