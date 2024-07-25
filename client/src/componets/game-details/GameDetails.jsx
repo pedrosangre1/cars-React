@@ -1,6 +1,8 @@
 import {useEffect, useState } from "react";
 import carsAPI from "../../api/carsapi";
 import { useParams } from "react-router-dom";
+import UserSection from "./user-section/UserSection";
+import "./user.modules.css";
 
 export default function GameDetails() {
     const[car, setCar] = useState({});
@@ -13,7 +15,7 @@ export default function GameDetails() {
         if (!car) { return <p>Loading...</p>; } 
     return (
         <section id="game-details">
-        <h1>Car Details</h1>
+        <h1>Подробности</h1>
         <div className="info-section">
 
             <div className="game-header">
@@ -25,11 +27,11 @@ export default function GameDetails() {
 
             <p className="text"> {car.summary} </p>
 
-            {/* <!-- Bonus ( for Guests and Users ) --> */}
+            {/* <!-- Bonus ( for Guests and Users ) -->
             <div className="details-comments">
                 <h2>Comments:</h2>
                 <ul>
-                    {/* <!-- list all comments for current game (If any) --> */}
+                     <!-- list all comments for current game (If any) --> 
                     <li className="comment">
                         <p>Content: I rate this one quite highly.</p>
                     </li>
@@ -37,26 +39,29 @@ export default function GameDetails() {
                         <p>Content: The best game.</p>
                     </li>
                 </ul>
-                {/* <!-- Display paragraph: If there are no games in the database --> */}
+             <!-- Display paragraph: If there are no games in the database --> 
                 <p className="no-comment">No comments.</p>
-            </div>
+            </div> */}
 
             {/* <!-- Edit/Delete buttons ( Only for creator of this game )  --> */}
-            <div className="buttons">
+            {/* <div className="buttons">
                 <a href="#" className="button">Edit</a>
                 <a href="#" className="button">Delete</a>
-            </div>
+            </div> */}
+             <UserSection />
         </div>
 
         {/* <!-- Bonus --> */}
         {/* <!-- Add Comment ( Only for logged-in users, which is not creators of the current game ) --> */}
-        <article className="create-comment">
+        {/* <article className="create-comment">
             <label>Add new comment:</label>
             <form className="form">
                 <textarea name="comment" placeholder="Comment......"></textarea>
                 <input className="btn submit" type="submit" value="Add Comment"/>
             </form>
-        </article>
+        </article> */}
+
+ 
 
     </section>
     );

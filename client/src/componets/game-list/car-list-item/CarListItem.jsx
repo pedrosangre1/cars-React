@@ -8,7 +8,7 @@ export default function CarListItem({
         <img src={photo}/>
         <h6>{marka}  {model}</h6>
         <h2>{regno}</h2>
-        <Link to={`/cars/${_id}/details`} className="details-button">Details</Link>
+        <Link to={`/cars/${_id}/details`} className="details-button">Подробности</Link>
     </div>
 </div>
     );
