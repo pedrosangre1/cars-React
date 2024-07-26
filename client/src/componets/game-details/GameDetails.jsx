@@ -2,7 +2,7 @@ import {useEffect, useState } from "react";
 import carsAPI from "../../api/carsapi";
 import { useParams } from "react-router-dom";
 import UserSection from "./user-section/UserSection";
-import "./user.modules.css";
+import "./user.css";
 
 export default function GameDetails() {
     const[car, setCar] = useState({});

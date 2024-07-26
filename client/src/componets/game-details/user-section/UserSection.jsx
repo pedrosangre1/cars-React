@@ -18,11 +18,12 @@ export default function UserSection() {
     useEffect(() => {
         (async function getCarItems() {
             try {
-                const response = await fetch(`${baseUrl}/carItems`);
+                const response = await fetch(`${baseUrl}/caritems`);
                 const result = await response.json();
+               // console.log(result);
                 const carItemResult = Object.values(result);
                 setUsers(carItemResult);
-                console.log(setUsers);
+                
             } catch (error) {
                 alert(error.message);
             } finally {
