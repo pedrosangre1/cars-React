@@ -21,6 +21,16 @@ input[type="text"] {
     border-radius: 50px;
     box-shadow: inset 6px 6px 6px #c0c2c5, inset -6px -6px 6px white;
 }
+select {
+    background: #ecf0f3;
+    padding: 30px;
+    padding-left: 20px;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 24px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #c0c2c5, inset -6px -6px 6px white;
+}
 
 textarea {
     width: 100%;

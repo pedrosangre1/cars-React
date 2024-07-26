@@ -6,16 +6,20 @@ export default function GameCreate() {
 
         <h1>Нов автомобил</h1>
         <label htmlFor="leg-title">Марка:</label>
-        <input type="text" id="title" name="title" placeholder="Enter game title..."/>
-
-        <label htmlFor="category">Модел</label>
-        <input type="text" id="category" name="category" placeholder="Enter game category..."/>
+        <select htmlFor="model" id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <label htmlFor="Model">Модел</label>
+        <input type="text" id="category" name="category" placeholder="Въведете модел"/>
 
         <label htmlFor="levels">Регистрационен Номер:</label>
-        <input type="number" id="maxLevel" name="maxLevel" min="1" placeholder="1"/>
+        <input type="text" id="maxLevel" name="maxLevel" min="1" placeholder="Въведете регистрацонен номер"/>
 
         <label htmlFor="game-img">Картинка:</label>
-        <input type="text" id="imageUrl" name="imageUrl" placeholder="Upload a photo..."/>
+        <input type="text" id="imageUrl" name="imageUrl" placeholder="Някаква картинка..."/>
 
         <label htmlFor="summary">Описание:</label>
         <textarea name="summary" id="summary"></textarea>
