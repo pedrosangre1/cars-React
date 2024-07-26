@@ -19,7 +19,7 @@ export default function UserList({
                 <thead>
                     <tr>
                         <th>
-                            Image
+                            Дата
                         </th>
                         <th>
                             Име<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down"
