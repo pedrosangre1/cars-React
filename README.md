@@ -31,6 +31,24 @@ SoftUni React Cource Project
 - [ ] Read comments from server
 - [ ] Add comments in the component
 - [ ] Clear form
+## 6. API Hooks
+- [ ] GameAPI
+- [ ] Cariten hooks
+- [ ] Form Hook
+## 7. Authentication
+- [ ] Auth API
+- [ ] Auth API hook
+- [ ] Auth state & context
+- [ ] Login
+- [ ] Register
+- [ ] Logout
+  ## 8. UI Implementation
+- [ ] Dynamic Navigation
+- [ ] Create game
+  - [ ] API Function
+  - [ ] Hook
+  - [ ] 
+
 [text](https://docs.google.com/document/d/1SVO-6ejDyWqlK2Fxv0B-COFdKbTwVG6QsSlpXsH5Wks/edit)
 
 
