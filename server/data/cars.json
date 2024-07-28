@@ -25,6 +25,15 @@
         "summary": "Nqkakvo opisanie",
         "datetime": "2024-07-22",
         "_id": "3ff9ffcb-3eff-4112-8889-f42add9b562c"
+    },
+    "9bcbd8d7-214e-4a0a-bf11-7a348a479fe0": {
+    "marka": "BMW",
+    "model": "736",
+    "regno": "KH22222AA",
+    "photo": "./images/car_1.jpg",
+    "summary": "Nqkakvo opisanie",
+    "datetime": "datetime",
+    "_id": "9bcbd8d7-214e-4a0a-bf11-7a348a479fe0"
     }
     
 }
