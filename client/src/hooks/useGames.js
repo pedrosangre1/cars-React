@@ -11,3 +11,16 @@ export function useGetAllGames() {
     },[]);
     return[cars, setCars];
 }
+
+export function useGetOneCars(carsId) {
+    const [cars, setCars] = useState({});
+
+    useEffect(() => {
+         (async() => {
+            const result = await carsAPI.getOne(carsId);
+            setCars(result);
+        })();
+    }, []);
+
+    return[cars, setCars];
+}

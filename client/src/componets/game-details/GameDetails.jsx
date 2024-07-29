@@ -1,18 +1,32 @@
-import {useEffect, useState } from "react";
-import carsAPI from "../../api/carsapi";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import UserSection from "./user-section/UserSection";
 import "./user.css";
+import { useGetOneCars } from "../../hooks/useGames";
 
 export default function GameDetails() {
-    const[car, setCar] = useState({});
-    const{carsId} = useParams();
+    const {carsId} =useParams ()
+    const[car, setCar] = useGetOneCars(carsId); 
+   // const [username, setUsername] =useState('');
+  //  const [carItems, setCarItems] =useState('');
+
+    // const itemsSubmitHandler = async (e) => {
+    //     e.preventDefault();
+
+    //     const newItem = await carsItemsApi.create(carsId, username, carItems);
+
+    //     setCar (prevState => ({
+    //         ...prevState,
+    //         carItem: {
+    //             prevState.carItem,
+    //             [newItem._id]: newItem,
+    //         }
+    //     }));
+    //     setUsername('');
+    //     setCar('');
+    //}
+
     
-    useEffect( () => { const fetchCarDetails = async ( ) => {
-        try { const result = await carsAPI. getOne(carsId); setCar(result); } 
-        catch (error) { console. error( "Error fetching car details:", error); } }; 
-        fetchCarDetails(); }, [carsId]); 
-        if (!car) { return <p>Loading...</p>; } 
     return (
         <section id="game-details">
         <h1>Подробности</h1>
