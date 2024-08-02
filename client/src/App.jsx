@@ -1,4 +1,5 @@
 import {Routes, Route} from 'react-router-dom';
+import { useState } from 'react';
 
 import Header from "./componets/header/Header"
 import Home from './componets/home/Home';
@@ -7,9 +8,25 @@ import Register from './componets/regiser/Register';
 import GameList from './componets/game-list/GameList';
 import GameCreate from './componets/game-create/GameCreate';
 import GameDetails from './componets/game-details/GameDetails';
+import { AuthContext } from './contexts/authContext';
+
 
 function App() {
+  const [authState, setAuthState] = useState({});
+
+  const changeAuthState = (state) =>{
+    setAuthState(state);
+  };
+
+  const contextData = {
+  email: authState.email,
+  accessToken: authState.accessToken,
+  isAuthenticated: !!authState.email,
+  changeAuthState,
+}
+
    return (
+    <AuthContext.Provider value = {contextData}>
   <div id="box">
      <h1>Коли</h1>
       <Header/>
@@ -24,6 +41,7 @@ function App() {
       </Routes>
     </main>
  </div>
+ </AuthContext.Provider>
   )
 }
 
