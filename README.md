@@ -36,10 +36,17 @@ SoftUni React Cource Project
 - [ ] Cariten hooks
 - [ ] Form Hook
 ## 7. Authentication
-- [ ] Auth API
-- [ ] Auth API hook
-- [ ] Auth state & context
-- [ ] Login
+- [x] Auth API
+  - [x] Login
+  - [ ] Register
+  - [ ] Logout 
+- [x] Auth API hook
+  - [x] Login
+  - [ ] Register
+  - [ ] Logout 
+- [x] Auth state & context
+- [x] Token managment
+- [x] Login
 - [ ] Register
 - [ ] Logout
   ## 8. UI Implementation

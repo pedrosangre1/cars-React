@@ -19,6 +19,7 @@ function App() {
   };
 
   const contextData = {
+    userId: authState._id,
   email: authState.email,
   accessToken: authState.accessToken,
   isAuthenticated: !!authState.email,
