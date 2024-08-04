@@ -24,3 +24,9 @@ export function useGetOneCars(carsId) {
 
     return[cars, setCars];
 }
+
+export function useCreateCar () {
+    const carsCreateHandler = (carData) =>  carsAPI.create (carData)
+
+    return carsCreateHandler;
+}
