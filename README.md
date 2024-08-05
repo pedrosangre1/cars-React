@@ -51,12 +51,15 @@ SoftUni React Cource Project
   - [x] Add form validation
 - [ ] Logout
 - [ ] Authorized Requests
-  ## 8. UI Implementation
+## 8. UI Implementation
 - [x] Dynamic Navigation
 - [x] Create car
   - [x] API Function
   - [x] Hook
 - [ ] Latest cars
+## 9. Refactoring
+- [x] Extract auth state from App component
+- [x] Persist auth state
 
 ## Notes
 [text](https://docs.google.com/document/d/1SVO-6ejDyWqlK2Fxv0B-COFdKbTwVG6QsSlpXsH5Wks/edit)

@@ -1,4 +1,6 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext } from "react";
+
+import usePersistedState from "../hooks/usePersistedState";
 
 
 export const AuthContext = createContext ({
@@ -11,7 +13,7 @@ export const AuthContext = createContext ({
     });
 
 export function AuthContextProvaider(props) {
-    const [authState, setAuthState] = useState({});
+    const [authState, setAuthState] = usePersistedState('auth', {});
 
     const changeAuthState = (state) => {
         // TODO: Quick solution, fix next time
