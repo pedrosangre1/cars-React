@@ -1339,7 +1339,46 @@
     	}
     };
     var seedData = {
-    	recipes: {
+    cars:{
+            "c638199f-12ba-43bd-8d1e-d3e3bd118fd0": {
+                marka: "BMW",
+                model: "316",
+                regno: "KH8888AA",
+                photo: "/images/car_1.jpg",
+                summary: "Nqkakvo opisanie",
+                datetime: "2024-07-22",
+                _id: "c638199f-12ba-43bd-8d1e-d3e3bd118fd0"
+            },
+            "a5497c4f-68b9-424c-bb21-bf6a0582b790": {
+                marka: "BMW",
+                model: "318",
+                regno: "KH7777BG",
+                photo: "/images/car_1.jpg",
+                summary: "Nqkakvo opisanie",
+                datetime: "2024-07-22",
+                _id: "a5497c4f-68b9-424c-bb21-bf6a0582b790"
+            },
+            "3ff9ffcb-3eff-4112-8889-f42add9b562c": {
+                marka: "BMW",
+                model: "318i",
+                regno: "KH9999AA",
+                photo: "/images/car_1.jpg",
+                summary: "Nqkakvo opisanie",
+                datetime: "2024-07-22",
+                _id: "3ff9ffcb-3eff-4112-8889-f42add9b562c"
+            },
+            "9bcbd8d7-214e-4a0a-bf11-7a348a479fe0": {
+            marka: "BMW",
+            model: "736",
+            regno: "KH22222AA",
+            photo: "./images/car_1.jpg",
+            summary: "Nqkakvo opisanie",
+            datetime: "datetime",
+            _id: "9bcbd8d7-214e-4a0a-bf11-7a348a479fe0"
+            }
+        },
+        
+        recipes: {
     		"3987279d-0ad4-4afb-8ca9-5b256ae3b298": {
     			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
     			name: "Easy Lasagna",
