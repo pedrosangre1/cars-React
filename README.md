@@ -42,20 +42,23 @@ SoftUni React Cource Project
   - [ ] Logout 
 - [x] Auth API hook
   - [x] Login
-  - [ ] Register
+  - [x] Register
   - [ ] Logout 
 - [x] Auth state & context
 - [x] Token managment
 - [x] Login
-- [ ] Register
+- [x] Register
+  - [x] Add form validation
 - [ ] Logout
+- [ ] Authorized Requests
   ## 8. UI Implementation
-- [ ] Dynamic Navigation
-- [ ] Create game
-  - [ ] API Function
-  - [ ] Hook
-  - [ ] 
+- [x] Dynamic Navigation
+- [x] Create car
+  - [x] API Function
+  - [x] Hook
+- [ ] Latest cars
 
+## Notes
 [text](https://docs.google.com/document/d/1SVO-6ejDyWqlK2Fxv0B-COFdKbTwVG6QsSlpXsH5Wks/edit)
 
 

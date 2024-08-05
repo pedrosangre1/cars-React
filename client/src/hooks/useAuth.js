@@ -11,7 +11,7 @@ export const useLogin = () => {
     
      changeAuthState(authData);
 
-        return result;
+        return authData;
     }
     return loginHandler;
 };
@@ -24,7 +24,7 @@ export const useRegister = () => {
 
         changeAuthState(authData);
 
-        return result;
+        return authData;
     }
 
     return registerHandler;

@@ -15,6 +15,9 @@ function App() {
   const [authState, setAuthState] = useState({});
 
   const changeAuthState = (state) =>{
+    // TODO: Quick solution, fix next time
+    localStorage.setItem('accessToken', state.accessToken)
+    
     setAuthState(state);
   };
 
