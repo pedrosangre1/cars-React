@@ -12,7 +12,7 @@ return (
         ?(<div id="user">
             <Link to="/games">Всички коли</Link>
             <Link to="/games/create">Нова кола</Link>
-            <Link to="/logaut">Изход</Link>
+            <Link to="/logout">Изход</Link>
         </div>)
         :(
             <div id="guest">

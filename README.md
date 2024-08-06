@@ -64,5 +64,7 @@ SoftUni React Cource Project
 ## Notes
 [text](https://docs.google.com/document/d/1SVO-6ejDyWqlK2Fxv0B-COFdKbTwVG6QsSlpXsH5Wks/edit)
 
+https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+
 
 npm run build
