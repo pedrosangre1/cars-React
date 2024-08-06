@@ -10,8 +10,8 @@ return (
         
         {isAuthenticated
         ?(<div id="user">
-            <Link to="/games">Всички коли</Link>
-            <Link to="/games/create">Нова кола</Link>
+            <Link to="/cars">Всички коли</Link>
+            <Link to="/cars/create">Нова кола</Link>
             <Link to="/logout">Изход</Link>
         </div>)
         :(
