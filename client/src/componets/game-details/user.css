@@ -491,7 +491,7 @@ ul {
 }
 
 /* Action buttons  */
-
+ 
 .btn:disabled,
 .btn.save:disabled {
   cursor: not-allowed;
@@ -537,14 +537,14 @@ ul {
 .after {
   margin-left: 10px;
 }
-
+/* -- error from other buttons
 .btn {
   padding: 5px;
   color: white;
   opacity: 0.7;
   width: 30px;
   height: 30px;
-}
+}*/
 .btn svg {
   margin: 0;
 }
@@ -567,7 +567,7 @@ ul {
   height: auto;
   width: auto;
   margin-left: 2px;
-}
+} 
 
 /* Paggination  */
 .pagination {

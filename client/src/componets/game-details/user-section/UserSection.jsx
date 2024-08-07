@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import UserAdd from "./user-add/UserAdd";
 import UserDetails from "./user-details/UserDetails"
 import UserDelete from "./user-delete/UserDelete";
+//import styles from '../UserSection.module.css'; 
 
 const baseUrl = 'http://localhost:3030/jsonstore';
 
@@ -55,7 +56,7 @@ export default function UserSection() {
         // make post request
         const response = await fetch(`${baseUrl}/carItems`, {
             method: 'POST',
-            headers: {'Content-Type': 'application/json',},
+            //headers: {'Content-Type': 'application/json',},
             body: JSON.stringify(userData),
         });
         const createdUser = await response.json();

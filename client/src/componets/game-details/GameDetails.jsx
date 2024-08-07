@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import UserSection from "./user-section/UserSection";
 import "./user.css";
+import style from "./game.module.css"
 import { useGetOneCars } from "../../hooks/useGames";
 
 export default function GameDetails() {
@@ -62,9 +63,12 @@ export default function GameDetails() {
                 <a href="#" className="button">Edit</a>
                 <a href="#" className="button">Delete</a>
             </div> */}
-             <UserSection />
+         
         </div>
-
+        <ul>
+               <UserSection /> 
+        </ul>
+             
         {/* <!-- Bonus --> */}
         {/* <!-- Add Comment ( Only for logged-in users, which is not creators of the current game ) --> */}
         {/* <article className="create-comment">
