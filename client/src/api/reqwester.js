@@ -5,29 +5,29 @@ const options = {};
 
 // const accessToken = localStorage.getItem('accessToken');
 const accessToken = getAccessToken();
-
+//console.log (accessToken);
 if (accessToken){
-    options.header = {
-        ...options.header,
+    options.headers = {
+        ...options.headers,
         'X-Authorization': accessToken,
-        //'Access-Control-Allow-Origin': '*' ,
-    }
+     }
     
 }
 if (method !== 'GET') {
     options.method = method;
 }
+
 if (data){
-    options.header = {
-        ...options.header,
-        'Conttend-Type':'application/json',
-        //'Access-Control-Allow-Origin': '*' ,
+    options.headers = {
+        ...options.headers,
+        'Content-Type':'application/json',
     };
+
     options.body = JSON.stringify(data);
-    //console.log(options.header);
+   
 }
 
-const response = await fetch (url, options);
+const response = await fetch(url, options);
 if (response.status === 204) {
     return; 
 };
