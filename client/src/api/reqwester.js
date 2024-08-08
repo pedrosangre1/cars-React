@@ -10,6 +10,7 @@ if (accessToken){
     options.header = {
         ...options.header,
         'X-Authorization': accessToken,
+        //'Access-Control-Allow-Origin': '*' ,
     }
     
 }
@@ -20,8 +21,10 @@ if (data){
     options.header = {
         ...options.header,
         'Conttend-Type':'application/json',
+        //'Access-Control-Allow-Origin': '*' ,
     };
     options.body = JSON.stringify(data);
+    //console.log(options.header);
 }
 
 const response = await fetch (url, options);
