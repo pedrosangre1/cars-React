@@ -13,6 +13,9 @@ const submitHandler = (e) =>{
 e.preventDefault();
 
 submitCallback(values);
+
+setValues(initialValues);
+
 };
 return {
     values,

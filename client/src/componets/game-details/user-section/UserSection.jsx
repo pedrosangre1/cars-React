@@ -35,8 +35,14 @@ export default function UserSection() {
         changeHandler,
         submitHandler,
         values,
-    } = useForm(initialValues, ({ carsItem }) => {
-       createCarItem(carsId, carsItem);
+    } = useForm(initialValues, async ({ carsItem }) => {
+        try{
+      const newCarsItems = await createCarItem(carsId, carsItem);
+
+      setCarItems(oldCarsItems => [...oldCarsItems, newCarsItems]);
+        } catch (err){
+            console.log(err.message);
+        }
     });
 
     // useEffect(() => {
@@ -119,7 +125,7 @@ export default function UserSection() {
         <h2>Comments:</h2>
         <ul>
             {carItems.map(carItems => (
-                    <li key = {carItems._id} className="comment">
+                <li key = {carItems._id} className="comment">
                         <p>Username: {carItems.text}</p>
                 </li>
            ))
