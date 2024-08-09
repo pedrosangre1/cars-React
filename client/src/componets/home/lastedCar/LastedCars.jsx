@@ -13,7 +13,7 @@ return (
                         <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                     </div>
                     <div className="data-buttons">
-                        <Link to={`/cars/${_id}/details`} className="btn details-btn">Details</Link>
+                        <Link to={`/cars/${_id}/details`} className="btn details-btn">ДЕТАЙЛИ</Link>
                     </div>
                 </div>
 )
