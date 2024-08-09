@@ -32,25 +32,25 @@ SoftUni React Cource Project
 - [ ] Add comments in the component
 - [ ] Clear form
 ## 6. API Hooks
-- [ ] GameAPI
-- [ ] Cariten hooks
-- [ ] Form Hook
+- [x] GameAPI
+- [x] Cariten hooks
+- [x] Form Hook
 ## 7. Authentication
 - [x] Auth API
   - [x] Login
-  - [ ] Register
-  - [ ] Logout 
+  - [x] Register
+  - [x] Logout 
 - [x] Auth API hook
   - [x] Login
   - [x] Register
-  - [ ] Logout 
+  - [x] Logout 
 - [x] Auth state & context
 - [x] Token managment
 - [x] Login
 - [x] Register
   - [x] Add form validation
-- [ ] Logout
-- [ ] Authorized Requests
+- [x] Logout
+- [x] Authorized Requests
 ## 8. UI Implementation
 - [x] Dynamic Navigation
 - [x] Create car

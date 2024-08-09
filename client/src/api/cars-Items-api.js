@@ -2,14 +2,15 @@ import reqwester from "./reqwester";
 
 const BASE_URL = `http://localhost:3030/data/carItems`
 
-const create = async (carId, username, text) => reqwester.post(buildUrl(carId),{username, text}); 
+const create =  (carId, text) => reqwester.post(BASE_URL,{carId, text}); 
 
-const getAll = async (carId) => {
-    const result = await reqwester.get(buildUrl(carId));
-    
-    const carItems = Object.values(result);
-return carItems;
+const getAll =  (carId) =>  {
+    const params = new URLSearchParams ({
+        where: `carId="${carId}"`
+    });
+  return   reqwester.get(`${BASE_URL}?${params.toString()}`);
 }
+    
 
 const caritemsAPI = {
     create,

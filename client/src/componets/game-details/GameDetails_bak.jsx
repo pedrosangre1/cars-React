@@ -4,15 +4,28 @@ import UserSection from "./user-section/UserSection";
 import "./user.css";
 import style from "./game.module.css"
 import { useGetOneCars } from "../../hooks/useGames";
-import { useForm } from "../../hooks/useForm";
-
-const initialValues = {
-
-}
 
 export default function GameDetails() {
     const {carsId} =useParams ()
     const[car, setCar] = useGetOneCars(carsId); 
+   // const [username, setUsername] =useState('');
+  //  const [carItems, setCarItems] =useState('');
+
+    // const itemsSubmitHandler = async (e) => {
+    //     e.preventDefault();
+
+    //     const newItem = await carsItemsApi.create(carsId, username, carItems);
+
+    //     setCar (prevState => ({
+    //         ...prevState,
+    //         carItem: {
+    //             prevState.carItem,
+    //             [newItem._id]: newItem,
+    //         }
+    //     }));
+    //     setUsername('');
+    //     setCar('');
+    //}
 
     
     return (
@@ -52,9 +65,9 @@ export default function GameDetails() {
             </div> */}
          
         </div>
-       <ul>
-            <UserSection /> 
-        </ul> 
+        <ul>
+               <UserSection /> 
+        </ul>
              
         {/* <!-- Bonus --> */}
         {/* <!-- Add Comment ( Only for logged-in users, which is not creators of the current game ) --> */}
