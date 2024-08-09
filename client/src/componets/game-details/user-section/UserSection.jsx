@@ -126,13 +126,12 @@ export default function UserSection() {
         <ul>
             {carItems.map(carItems => (
                 <li key = {carItems._id} className="comment">
-                        <p>Username: {carItems.text}</p>
+                        <p>{carItems.author.username}: {carItems.text}</p>
                 </li>
            ))
            }
         </ul>
-             {/* <!-- Display paragraph: If there are no games in the database -->  */}
-                <p className="no-comment">No comments.</p>
+             {carItems.length === 0 && <p className="no-comment">No comments.</p>}
             </div>
 
 {isAuthenticated && (

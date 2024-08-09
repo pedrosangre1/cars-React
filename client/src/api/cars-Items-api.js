@@ -6,7 +6,8 @@ const create =  (carId, text) => reqwester.post(BASE_URL,{carId, text});
 
 const getAll =  (carId) =>  {
     const params = new URLSearchParams ({
-        where: `carId="${carId}"`
+        where: `carId="${carId}"`,
+        load: `author=_ownerId:users`,
     });
   return   reqwester.get(`${BASE_URL}?${params.toString()}`);
 }
