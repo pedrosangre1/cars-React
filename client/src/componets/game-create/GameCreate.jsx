@@ -5,9 +5,9 @@ import { useCreateCar } from "../../hooks/useGames";
 
 const initialValues = {
     cars: '',
-    carmodel: '',
+    model: '',
     regno: '',
-    imageUrl: '',
+    photo: '',
     summary: '',
 
 };
@@ -38,24 +38,24 @@ submitHandler,
 
         <h1>Нов автомобил</h1>
         <label htmlFor="leg-title">Марка:</label>
-        <select htmlFor="model" id="cars" name="cars" value = {values.cars} onChange={changeHandler}>
+        <select htmlFor="model" id="cars" name="marka" defaultValue = {values.cars} onChange={changeHandler}>
             <option value="volvo">Volvo</option>
             <option value="saab">Saab</option>
             <option value="fiat">Fiat</option>
             <option value="audi">Audi</option>
         </select>
         <label htmlFor="Model">Модел</label>
-        <input type="text" id="carmodel" name="carmodel" value = {values.carmodel} onChange={changeHandler} placeholder="Въведете модел"/>
+        <input type="text" id="model" name="model" value = {values.model} onChange={changeHandler} placeholder="Въведете модел"/>
 
         <label htmlFor="levels">Регистрационен Номер:</label>
         <input type="text" id="maxLevelregno" name="regno" value = {values.regno} onChange={changeHandler} placeholder="Въведете регистрацонен номер"/>
 
         <label htmlFor="game-img">Картинка:</label>
-        <input type="text" id="imageUrl" name="imageUrl" value = {values.imageUrl} onChange={changeHandler} placeholder="Някаква картинка..."/>
+        <input type="text" id="photo" name="photo" value = {values.photo} onChange={changeHandler} placeholder="Някаква картинка..."/>
 
         <label htmlFor="summary">Описание:</label>
         <textarea name="summary" value = {values.summary} onChange={changeHandler} id="summary"></textarea>
-        <input className="btn submit" type="submit" value="Create Game"/>
+        <input className="btn submit" type="submit" value="ДОБАВЯНЕ НА КОЛА"/>
     </div>
 </form>
 </section>
