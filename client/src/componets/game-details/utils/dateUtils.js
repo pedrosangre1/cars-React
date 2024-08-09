@@ -1,9 +1,12 @@
 export const formatDate = (dateString) => {
-    const date = new Date(dateString);
-
+ 
+   const date = new Date(dateString);
+   if (date===null) {
+    return '';
+}
     const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
     
-    const formattedDate = date.toLocaleDateString('en-US', dateOptions);
+    const formattedDate = date.toLocaleDateString('bg-BG', dateOptions);
 
     return formattedDate;
 };
