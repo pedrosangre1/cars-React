@@ -12,6 +12,7 @@ export const AuthContext = createContext ({
         logout: () => null,
     });
 
+    
 export function AuthContextProvaider(props) {
     const [authState, setAuthState] = usePersistedState('auth', {});
 
