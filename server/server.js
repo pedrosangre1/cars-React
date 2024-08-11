@@ -1373,7 +1373,7 @@
             regno: "KH22222AA",
             photo: "./images/car_1.jpg",
             summary: "Nqkakvo opisanie",
-            datetime: "datetime",
+            datetime: "2024-07-23",
             _id: "9bcbd8d7-214e-4a0a-bf11-7a348a479fe0"
             }
         },
