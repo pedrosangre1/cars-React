@@ -4,9 +4,11 @@ export const formatDate = (dateString) => {
    if (isNaN(date)) {
     return '';
 }
-    const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+const dateOptions = { day: '2-digit', month: '2-digit', year: 'numeric' };    
+    //const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
     
     const formattedDate = date.toLocaleDateString('bg-BG', dateOptions);
+   // const formattedDate = date.toLocaleDateString('bg-BG', dateOptions);
 
     return formattedDate;
 };
