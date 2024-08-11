@@ -8,7 +8,7 @@ import Login from './componets/login/Login';
 import Register from './componets/regiser/Register';
 import GameList from './componets/game-list/GameList';
 import GameCreate from './componets/game-create/GameCreate';
-import GameDetails from './componets/game-details/GameDetails';
+import CarDetails from './componets/game-details/CarDetails';
 import Logout from './componets/logout/Logout';
 
 
@@ -27,7 +27,7 @@ function App() {
         <Route path='/register' element = {<Register />}></Route>
         <Route path='/logout' element = {<Logout />}></Route>
         <Route path='/cars' element = {<GameList />}></Route>
-        <Route path='/cars/:carsId/details' element = {<GameDetails />}></Route>
+        <Route path='/cars/:carsId/details' element = {<CarDetails />}></Route>
         <Route path='/cars/create' element = {<GameCreate />}></Route>
       </Routes>
     </main>

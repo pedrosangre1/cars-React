@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRegister } from "../../hooks/useAuth";
 import { useForm } from "../../hooks/useForm";
 
-const initialValues = {email: '', password: '', rePassword: ''};
+const initialValues = {username: '', email: '', password: '', rePassword: ''};
 
 export default function Register() {
     const [error, setError] = useState ('');
@@ -15,7 +15,7 @@ const registerHandler = async (values) =>{
     if (values.password !== values.rePassword) return setError ('Паролите не съвпадат');
     
     try{
-        await register(values.email, values.password)
+        await register(values.username, values.email, values.password)
         navigate('/');
     }catch (err) {
         console.error(err.message)
@@ -34,7 +34,17 @@ const {
             <form id="register" onSubmit={submitHandler}>
                 <div className="container">
                     <div className="brand-logo"></div>
-                    <h1>Register</h1>
+                    <h1>Регистрация</h1>
+                    
+                    <label htmlFor="username">Потебител:</label>
+                    <input 
+                        type="nickname"
+                        id="username" 
+                        name="username" 
+                        value={values.username}
+                        onChange={changeHandler}
+                        placeholder="Потребителско име"
+                    />
 
                     <label htmlFor="email">Email:</label>
                     <input 

@@ -1,7 +1,7 @@
 export const formatDate = (dateString) => {
  
    const date = new Date(dateString);
-   if (date===null) {
+   if (date!==null) {
     return '';
 }
     const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };

@@ -3,13 +3,13 @@ import { useParams } from "react-router-dom";
 import UserSection from "./user-section/UserSection";
 import { useGetOneCars } from "../../hooks/useGames";
 import { useForm } from "../../hooks/useForm";
-import {formatDate } from "../game-details/utils/dateUtils"
+import {formatDate } from "./utils/dateUtils"
 
 const initialValues = {
 
 }
 
-export default function GameDetails() {
+export default function CarDetails() {
     const {carsId} =useParams ()
     const[car, setCar] = useGetOneCars(carsId); 
 
