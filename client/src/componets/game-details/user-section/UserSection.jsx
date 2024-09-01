@@ -16,7 +16,11 @@ import { useAuthContext } from "../../../contexts/authContext";
 // const baseUrl = 'http://localhost:3030/jsonstore';
 
 const initialValues = {
-carsItem: '',
+//carsItem: '',
+userDate: '',
+//carsKilometers: '',
+//carsDescription: '',
+//actionsPerformed: '',
 
 }
 
@@ -37,7 +41,7 @@ export default function UserSection() {
         values,
     } = useForm(initialValues, async ({ carsItem }) => {
         try{
-      const newCarsItems = await createCarItem(carsId, carsItem);
+      const newCarsItems = await createCarItem(carsId, values);
 
       setCarItems(oldCarsItems => [...oldCarsItems, newCarsItems]);
         } catch (err){
@@ -45,106 +49,55 @@ export default function UserSection() {
         }
     });
 
-    // useEffect(() => {
-    //     (async function getCarItems() {
-    //         try {
-    //             const response = await fetch(`${baseUrl}/caritems`);
-    //             const result = await response.json();
-    //            // console.log(result);
-    //             const carItemResult = Object.values(result);
-    //             setUsers(carItemResult);
-                
-    //         } catch (error) {
-    //             alert(error.message);
-    //         } finally {
-    //             setIsLoading(false);
-    //         }
-    //     })();
-    // }, []);
-
-    // const addUserClickHandler = () => {
-    //      setShowAddUser(true);
-    //  }
-
-    // const addUserCloseHandler = () => {
-    //     setShowAddUser(false);
-    // }
-
-    // const addUserSaveHandler = async (e) => {
-    //     // prevent refresh
-    //     e.preventDefault();
-
-    //     // get user data
-    //     const formData = new FormData(e.currentTarget);
-    //     const userData = {
-    //         ...Object.fromEntries(formData),
-    //         createdAt: new Date().toISOString(),
-    //         updatedAt: new Date().toISOString(),
-    //     };
-
-        // make post request
-        // const response = await fetch(`${baseUrl}/carItems`, {
-        //     method: 'POST',
-        //     headers: {'Content-Type': 'application/json',},
-        //     body: JSON.stringify(userData),
-        // });
-        // const createdUser = await response.json();
-
-        // update local state
- //       setUsers(oldUsers => [...oldUsers, createdUser]);
-
-        // close modal
-//         setShowAddUser(false);
-//   //  }
-
-//     const userDetailsClickHandler = (carItemID) => {
-//         setShowUserDetailsById(carItemID);
-//     }
-
-//     const userDeleteClickHandler = (carItemID) => {
-//         setShowUserDeleteById(carItemID);
-//     }
-
-    // const userDeleteHandler = async (carItemID) => {
-    //     // Delete request to server
-    //     await fetch(`${baseUrl}/carItems/${carItemID}`, {
-    //         method: 'DELETE',
-    //     });
-
-    //     // delete from local state
-    //     setUsers(oldUsers => oldUsers.filter(user => user._id !== carItemID))
-
-        // close modal
-    //    setShowUserDeleteById(null);
-    //}
-
     return (
 <section className="card users-container">
             {/* <Search /> */}
-    <div className="details-comments">
-        <h2>Comments:</h2>
-        <ul>
-            {carItems.map(carItems => (
+    <div className="text">
+    <table>
+  <tr>
+    <th>Потребител</th>
+    <th>Дата</th>
+    <th>Километри</th>
+    <th>Описание</th>
+    <th>Действия</th>
+  </tr>
+  {carItems.map(carItems => (
+  <tr>
+    <td>{carItems.author.username}</td>
+    <td>{carItems.carsItems.userDate}</td>
+    <td>{carItems.carsItems.kilometers}</td>
+    <td>{carItems.carsItems.Description}</td>
+    <td>{carItems.carsItems.actionsPerformed}</td>
+  </tr>
+    ))
+}
+  </table>
+       {/* <ul>
+
+             {carItems.map(carItems => (
                 <li key = {carItems._id} className="comment">
-                        <p>{carItems.author.username}: {carItems.text}</p>
+                        <p>{carItems.author.username}: {carItems.carsItems.userDate} | {carItems.carsItems.kilometers} | {carItems.carsItems.Description} | {carItems.carsItems.actionsPerformed} |</p>
                 </li>
            ))
            }
-        </ul>
+        </ul> */}
              {carItems.length === 0 && <p className="no-comment">No comments.</p>}
             </div>
 
 {isAuthenticated && (
      <article className="create-comment">
-            <label>Add new comment:</label>
+            <label>Добаване:</label>
             <form className="form" onSubmit={submitHandler}>
-                <textarea 
-                    name="carsItem" 
-                    placeholder="Comment......"
-                    onChange={changeHandler}
-                    value={values.carsItem} 
-                ></textarea>
-                <input className="btn submit" type="submit" value="Add Comment"/>
+            <label htmlFor="userDate">ДАТА:</label>
+            <input type="date" id="userDate" name="userDate"onChange={changeHandler} value={values.userDate}/>
+            <label htmlFor="kilometers">КИЛОМЕТРИ:</label>
+            <input type="text" id="kilometers" name="kilometers"onChange={changeHandler} value={values.carsKilometers}/>
+            <label htmlFor="Description">Описание:</label>
+            <input type="text" id="Description" name="Description"onChange={changeHandler} value={values.carsDescription}/>
+            <label htmlFor="actionsPerformed">Извършени действия:</label>
+            <input type="text" id="actionsPerformed" name="actionsPerformed"onChange={changeHandler} value={values.actionsPerformed}/>
+
+                <input className="btn submit" type="submit" value="Добави"/>
             </form>
      </article>)}
             {/* <UserList

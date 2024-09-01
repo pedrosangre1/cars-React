@@ -76,6 +76,13 @@ label[for="female"] {
     margin-top: 10px;
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+input[type="date"],
 input[type="nickname"],
 input[type="password"],
 input[type="number"],

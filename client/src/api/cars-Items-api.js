@@ -2,7 +2,7 @@ import reqwester from "./reqwester";
 
 const BASE_URL = `http://localhost:3030/data/carItems`
 
-const create =  (carId, text) => reqwester.post(BASE_URL,{carId, text}); 
+const create =  (carId, carsItems) => reqwester.post(BASE_URL,{carId, carsItems}); 
 
 const getAll =  (carId) =>  {
     const params = new URLSearchParams ({
