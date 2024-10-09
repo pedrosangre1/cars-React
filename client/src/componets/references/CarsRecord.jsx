@@ -11,8 +11,8 @@ export default function CarsRecord() {
   
   return (
     
-    <div>
-      <GameList/>
+    <div> 
+            <GameList/> 
           <img className="game-img" src={car.photo} />
           <h1>{car.marka}  {car.model}</h1>
           <span className="levels">Регистрационен номер:{car.regno}</span>
