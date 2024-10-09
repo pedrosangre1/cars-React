@@ -12,6 +12,7 @@ return (
         ?(<div id="user">
             <Link to="/cars">Всички коли</Link>
             <Link to="/cars/create">Нова кола</Link>
+            <Link to="/references">Справки</Link>
             <Link to="/logout">Изход</Link>
         </div>)
         :(
