@@ -13,6 +13,7 @@ SoftUni React Cource Project
 - [x] Setup react-router-dom
 - [x] Add routes in App.jsx
 - [x] Add links in the navigation
+- [ ] Protectet routes
 ## 3. Create Service Layer
 - [x] Service layer architecture disccusion
 - [x] Abstract requester
@@ -57,6 +58,8 @@ SoftUni React Cource Project
   - [x] API Function
   - [x] Hook
 - [ ] Latest cars
+- [ ] CarItems Edit/Delete
+- [ ] Form Items Validation 
 ## 9. Refactoring
 - [x] Extract auth state from App component
 - [x] Persist auth state

@@ -11,7 +11,7 @@ const initialValues = {
     summary: '',
 
 };
-export default function GameCreate() {
+export default function CarCreate() {
     const navigate = useNavigate();
     const createCar = useCreateCar();
 
