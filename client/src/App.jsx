@@ -6,7 +6,6 @@ import Header from "./componets/header/Header"
 import Home from './componets/home/Home';
 import Login from './componets/login/Login';
 import Register from './componets/regiser/Register';
-import GameList from './componets/game-list/CarsList';
 import GameCreate from './componets/game-create/GameCreate';
 import CarDetails from './componets/game-details/CarDetails';
 import Logout from './componets/logout/Logout';
