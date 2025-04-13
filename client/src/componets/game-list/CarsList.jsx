@@ -1,7 +1,7 @@
 import { useGetAllGames } from "../../hooks/useGames";
 import CarListItem from "./car-list-item/CarListItem";
 
-export default function GameList() {
+export default function CarsList() {
    const [cars] = useGetAllGames ();
     
     return (

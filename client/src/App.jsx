@@ -6,11 +6,12 @@ import Header from "./componets/header/Header"
 import Home from './componets/home/Home';
 import Login from './componets/login/Login';
 import Register from './componets/regiser/Register';
-import GameList from './componets/game-list/GameList';
+import GameList from './componets/game-list/CarsList';
 import GameCreate from './componets/game-create/GameCreate';
 import CarDetails from './componets/game-details/CarDetails';
 import Logout from './componets/logout/Logout';
 import CarsRecord from './componets/references/CarsRecords';
+import CarsList from './componets/game-list/CarsList';
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
         <Route path='/login' element = {<Login />}></Route>
         <Route path='/register' element = {<Register />}></Route>
         <Route path='/logout' element = {<Logout />}></Route>
-        <Route path='/cars' element = {<GameList />}></Route>
+        <Route path='/cars' element = {<CarsList />}></Route>
         <Route path='/cars/:carsId/details' element = {<CarDetails />}></Route>
         <Route path='/cars/create' element = {<GameCreate />}></Route>
         <Route path='/references' element = {<CarsRecord />}></Route>

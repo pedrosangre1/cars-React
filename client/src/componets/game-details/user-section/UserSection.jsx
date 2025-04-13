@@ -60,6 +60,7 @@ export default function UserSection() {
     <th>Километри</th>
     <th>Описание</th>
     <th>Действия</th>
+    <th>Редакция</th>
   </tr>
   {carItems.map(carItems => (
   <tr>
@@ -68,6 +69,7 @@ export default function UserSection() {
     <td>{carItems.carsItems.kilometers}</td>
     <td>{carItems.carsItems.Description}</td>
     <td>{carItems.carsItems.actionsPerformed}</td>
+    <td>редакция/изтроване</td>
   </tr>
     ))
 }

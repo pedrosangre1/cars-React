@@ -1,5 +1,5 @@
 import React from 'react';
-import GameList from '../game-list/GameList';
+import GameList from '../game-list/CarsList';
 
 
 
