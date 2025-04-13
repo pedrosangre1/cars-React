@@ -20,7 +20,7 @@ const [lastedCars, setLastedCars] = useState([]);
                 <h2>ВСИЧКИ МОИ КОЛИ</h2>
                 <h3></h3>
             </div>
-            <img src="./images/four_slider_img01.png" alt="hero"/>
+            <img src="./images/car_img01.png" alt="cars"/>
 
             <div id="home-page">
                 <h1>ПОСЛЕДНО ДОБАВЕНИ</h1>

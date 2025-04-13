@@ -81,7 +81,7 @@ export default function UserSection() {
            ))
            }
         </ul> */}
-             {carItems.length === 0 && <p className="no-comment">No comments.</p>}
+             {carItems.length === 0 && <p className="no-comment">.</p>}
             </div>
 
 {isAuthenticated && (
